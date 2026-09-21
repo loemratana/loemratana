@@ -4,7 +4,7 @@
 
 Backend-focused software engineer building scalable, secure and maintainable systems.
 
-[Portfolio](https://YOUR_PORTFOLIO) · [LinkedIn](https://linkedin.com/in/YOUR_LINKEDIN) · [Email](mailto:YOUR_EMAIL)
+[Email](mailto:loemratana63@gmail.com)
 
 ---
 
@@ -168,6 +168,4 @@ A content management system with a public landing page and an admin dashboard.
 
 Always happy to talk about backend systems, performance and deployment.
 
-- Email: [YOUR_EMAIL](mailto:YOUR_EMAIL)
-- LinkedIn: [linkedin.com/in/YOUR_LINKEDIN](https://linkedin.com/in/YOUR_LINKEDIN)
-- Portfolio: [YOUR_PORTFOLIO](https://YOUR_PORTFOLIO)
+- Email: [loemratana63@gmail.com](mailto:loemratana63@gmail.com)
