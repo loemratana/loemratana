@@ -160,8 +160,8 @@ A content management system with a public landing page and an admin dashboard.
 ## GitHub activity
 
 <p>
-  <img height="150" alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&hide_border=true&theme=transparent&title_color=58a6ff&icon_color=58a6ff&text_color=8b949e" />
-  <img height="150" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&langs_count=6&hide_border=true&theme=transparent&title_color=58a6ff&text_color=8b949e" />
+  <img height="150" alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=loemratana&show_icons=true&hide_border=true&theme=transparent&title_color=58a6ff&icon_color=58a6ff&text_color=8b949e" />
+  <img height="150" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=loemratana&layout=compact&langs_count=6&hide_border=true&theme=transparent&title_color=58a6ff&text_color=8b949e" />
 </p>
 
 ## Contact
