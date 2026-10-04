@@ -1,171 +1,553 @@
-# Ratana
+# 👋 Hi, I'm Ratana
 
-**Full-Stack Developer · Backend-Focused · System Builder**
+### Full-Stack Developer · Backend-Focused · System Builder
 
-Backend-focused software engineer building scalable, secure and maintainable systems.
+I build **backend systems, APIs, databases, and production infrastructure**.
 
-[Email](mailto:loemratana63@gmail.com)
+I'm interested in more than making features work.
+
+I like understanding:
+
+> **Why is this slow?**
+> **Where is the bottleneck?**
+> **What happens when traffic increases?**
+> **How should the data be modelled?**
+> **How do we know the system is healthy?**
 
 ---
 
-I build web and mobile applications, but I'm most at home on the backend: designing APIs, modelling data, securing access, and getting services running reliably in production.
+## 🧠 How I Think About Systems
 
-I enjoy understanding why a system is slow, where the bottleneck is, and how to improve it.
-
-## What I build
-
-- REST APIs and backend services with **Java / Spring Boot** and **Node.js / Express**
-- Authenticated systems with roles, permissions, OTP and email flows
-- Database-driven applications on **PostgreSQL**, **MongoDB** and **Redis**
-- Web and mobile clients with **React**, **Next.js** and **React Native**
-- Dockerized deployments on a VPS, with reverse proxy, SSL and monitoring
-
-## Engineering focus
+I usually approach a problem like this:
 
 ```text
-Backend Engineering     Java · Spring Boot · Node.js · Express
-        ↓
-API Design              REST · resource design · consistent responses
-        ↓
-Database Engineering    PostgreSQL · MongoDB · Redis · indexing
-        ↓
-Security                JWT · RBAC · OTP · email verification
-        ↓
-Performance             measure · analyze · optimize
-        ↓
-Deployment              Docker · Nginx · Cloudflare · VPS
-        ↓
-Observability           Grafana · Prometheus · Loki
+             ┌──────────────────┐
+             │     Problem      │
+             └────────┬─────────┘
+                      ↓
+             ┌──────────────────┐
+             │     Measure      │
+             │ logs · metrics   │
+             │ query timings    │
+             └────────┬─────────┘
+                      ↓
+             ┌──────────────────┐
+             │ Find Bottleneck  │
+             │ API · DB · I/O   │
+             │ network · code   │
+             └────────┬─────────┘
+                      ↓
+             ┌──────────────────┐
+             │     Analyze      │
+             │ query plans      │
+             │ data flow        │
+             │ access patterns  │
+             └────────┬─────────┘
+                      ↓
+             ┌──────────────────┐
+             │     Optimize     │
+             │ index · query    │
+             │ architecture     │
+             └────────┬─────────┘
+                      ↓
+             ┌──────────────────┐
+             │    Measure Again │
+             └──────────────────┘
 ```
 
-### Performance
+I prefer **evidence over assumptions**.
+
+---
+
+# 🏗️ What I Build
+
+| Area              | What I work on                                              |
+| ----------------- | ----------------------------------------------------------- |
+| ⚙️ Backend        | REST APIs, business logic, authentication, workflows        |
+| 🗄️ Database      | Data modelling, indexes, queries, aggregation, transactions |
+| 🔐 Security       | JWT, RBAC, OTP, email verification, password recovery       |
+| ⚡ Performance     | API latency, database bottlenecks, query optimization       |
+| 🌐 Frontend       | React, Next.js, React Native                                |
+| 🚀 Infrastructure | Docker, Nginx, VPS, Cloudflare, SSL                         |
+| 📊 Observability  | Grafana, Prometheus, Loki, Node Exporter, Netdata           |
+
+---
+
+# ⚙️ Backend Engineering
+
+### Java / Spring Boot
 
 ```text
-Measure
-  ↓
-Identify bottleneck
-  ↓
-Analyze database / API
-  ↓
+Controller
+    ↓
+Service
+    ↓
+Repository
+    ↓
+Database
+```
+
+I focus on keeping the layers clear and making business logic easy to test and maintain.
+
+### Node.js / Express
+
+```text
+Request
+   ↓
+Middleware
+   ↓
+Validation
+   ↓
+Controller
+   ↓
+Service
+   ↓
+Database / Storage
+```
+
+I use Node.js when the application benefits from a lightweight API architecture and fast iteration.
+
+---
+
+# 🗄️ Database Engineering
+
+I don't treat the database as just a place to store data.
+
+I think about:
+
+```text
+Data Model
+    ↓
+Access Pattern
+    ↓
+Query
+    ↓
+Query Plan
+    ↓
+Index
+    ↓
+Performance
+```
+
+### Technologies
+
+**PostgreSQL** · **MongoDB** · **Redis**
+
+### Things I care about
+
+* Choosing indexes based on real query patterns
+* Avoiding unnecessary data loading
+* Understanding query execution plans
+* Optimizing aggregation queries
+* Designing relationships and constraints
+* Handling transactions and concurrent operations
+* Using caching where it actually helps
+
+---
+
+# ⚡ Performance Engineering
+
+When an endpoint is slow, I don't immediately add more hardware.
+
+I investigate.
+
+```text
+Slow Request
+     ↓
+┌────────────────────┐
+│ API timing         │
+├────────────────────┤
+│ Database timing    │
+├────────────────────┤
+│ Query execution    │
+├────────────────────┤
+│ Network / I/O      │
+├────────────────────┤
+│ Application logic  │
+└────────────────────┘
+     ↓
+Find the actual bottleneck
+     ↓
 Optimize
-  ↓
-Measure again
+     ↓
+Benchmark again
 ```
 
-- Investigating slow API response times end to end
-- Adding database indexes based on how the data is actually queried
-- Optimizing aggregation queries behind dashboards and KPI reports
-- Reducing unnecessary data loading so endpoints fetch only what they need
+### Typical optimizations
 
-### Security
+* Database indexes
+* Query optimization
+* Aggregation optimization
+* Pagination
+* Selecting only required fields
+* Reducing unnecessary database requests
+* Caching frequently accessed data
+* Improving API response payloads
 
-- JWT authentication
-- Role-based access control (RBAC) and permission handling
-- Two-factor authentication with OTP
-- Email verification
-- Password reset flows using email OTP
+---
+
+# 🔐 Security
+
+Security is part of the system design, not something added at the end.
+
+```text
+Authentication
+      ↓
+Authorization
+      ↓
+Permission Check
+      ↓
+Input Validation
+      ↓
+Business Logic
+      ↓
+Data Access
+```
+
+### Implemented
+
+* JWT authentication
+* Role-Based Access Control
+* Permission systems
+* OTP authentication
+* Email verification
+* Password reset with email OTP
+* Request validation
+
+---
+
+# 🚀 Production & Infrastructure
+
+I also like the part of development that happens after the code is finished.
+
+```text
+                    Internet
+                       │
+                       ▼
+              ┌─────────────────┐
+              │    Cloudflare   │
+              │   DNS / SSL     │
+              └────────┬────────┘
+                       ↓
+              ┌─────────────────┐
+              │      Nginx      │
+              │ Reverse Proxy   │
+              └────────┬────────┘
+                       ↓
+              ┌─────────────────┐
+              │     Docker      │
+              │ Docker Compose  │
+              └────────┬────────┘
+                       ↓
+              ┌─────────────────┐
+              │    Backend API  │
+              └───────┬─────────┘
+                      / \
+                     /   \
+                    ↓     ↓
+              Database   Storage
+              PostgreSQL MongoDB
+              Redis      MinIO
+```
 
 ### Infrastructure
 
+**Docker** · **Docker Compose** · **Linux** · **Nginx** · **Cloudflare** · **MinIO**
+
+---
+
+# 📊 Observability
+
+A production system should tell you what is happening.
+
 ```text
-Client
-  ↓
-Cloudflare              DNS · SSL/TLS
-  ↓
-Nginx                   reverse proxy
-  ↓
-Docker                  Docker Compose · container networking
-  ↓
-Backend API
-  ↓
-Database / Redis / Object Storage       PostgreSQL · MongoDB · Redis · MinIO
-  ↓
-Monitoring              Grafana · Prometheus · Loki · Netdata
+Application
+     │
+     ├──────────► Logs ───────► Loki
+     │
+     ├──────────► Metrics ────► Prometheus
+     │
+     └──────────► Dashboard ──► Grafana
+                              │
+                              ▼
+                         Investigation
 ```
 
-## Selected projects
+I use observability to answer questions like:
 
-### Depot Assessment & Tracking System
+* Which endpoint is slow?
+* Is the database the bottleneck?
+* Is CPU or memory increasing?
+* Are errors increasing?
+* Is a container unhealthy?
+* Did a deployment introduce a regression?
 
-A business assessment and tracking platform where I worked on API development, evaluation workflows, database optimization, authentication, OTP verification and production deployment.
+---
 
-This is the project where I did the most backend engineering, not just CRUD:
+# 🧩 Selected Projects
 
-- Investigated slow API responses, analyzed database queries, and added indexes where the queries needed them
-- Reduced unnecessary data loading and optimized the aggregation queries behind dashboard and KPI reports
-- Built role-based permissions, two-factor authentication with OTP, and password reset via email OTP
-- Implemented assessment management, evaluation workflows, filtering and searching
-- Deployed with Docker and handled monitoring and troubleshooting
+## 01 · Depot Assessment & Tracking System
 
-**Focus:** API performance · database optimization · authentication and authorization · Docker · monitoring
+### `Backend · Performance · Security · Production`
 
-### E-Commerce System
+A business assessment and tracking platform involving API development, evaluation workflows, authentication, reporting and production infrastructure.
 
-A backend for an online store, built around a product model with variants, sizes and stock.
+### 🔍 The interesting part
 
-- Product management with variants, sizes and stock tracking
-- Shopping cart, cart items and cart totals
-- Authentication with Spring Security and JWT
-- Product images handled through Cloudinary
+This wasn't just CRUD.
 
-**Stack:** Java · Spring Boot · Spring Security · PostgreSQL · Redis · JWT · Cloudinary
+I worked on investigating **why APIs were slow**, then traced the problem through the application and database.
 
-### Task Management System
+```text
+Slow API
+   ↓
+Measure request time
+   ↓
+Inspect database queries
+   ↓
+Check query patterns
+   ↓
+Add / improve indexes
+   ↓
+Reduce unnecessary data
+   ↓
+Optimize aggregation
+   ↓
+Measure again
+```
 
-A task and workforce management app with a Spring Boot API and a React Native mobile client.
+### Built / improved
 
-- Tasks and subtasks with role-based access control
-- KPI tracking and approval workflows
-- Employee and department management
+* REST APIs
+* Assessment workflows
+* Evaluation management
+* Filtering and searching
+* Dashboard and KPI queries
+* Database indexes
+* Aggregation queries
+* JWT authentication
+* RBAC / permissions
+* OTP verification
+* Password reset
+* Docker deployment
+* Production monitoring
 
-**Stack:** Java · Spring Boot · PostgreSQL · React Native · Expo
+**Focus:** `Performance · Database · Security · Deployment`
 
-### CMS / Landing Page Platform
+---
 
-A content management system with a public landing page and an admin dashboard.
+# 🛒 02 · E-Commerce System
 
-- Hero banners, community posts, media assets and awards
-- Content publishing and CMS management
-- Admin dashboard with charts
+### `Spring Boot · PostgreSQL · Redis`
 
-**Stack:** Node.js · Express.js · MongoDB · Mongoose · Next.js · Tailwind CSS · Recharts
+Backend system for an online store with products, variants, sizes and inventory.
 
-## Tech stack
+```text
+Product
+   │
+   ├── Variant
+   │      └── Inventory
+   │
+   └── Images
+```
 
-| Area | Technologies |
-| :--- | :--- |
-| **Languages** | <img src="https://skillicons.dev/icons?i=java,js" height="36" alt="Java, JavaScript" /><br>Java · JavaScript |
-| **Backend** | <img src="https://skillicons.dev/icons?i=spring,nodejs,express" height="36" alt="Spring, Node.js, Express" /><br>Spring Boot · Spring Security · Node.js · Express.js · REST · JWT |
-| **Frontend** | <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind" height="36" alt="React, Next.js, Tailwind CSS" /><br>React · Next.js · React Native · Expo · Tailwind CSS |
-| **Databases** | <img src="https://skillicons.dev/icons?i=postgres,mongodb,redis,prisma" height="36" alt="PostgreSQL, MongoDB, Redis, Prisma" /><br>PostgreSQL · MongoDB · Redis · Prisma · Mongoose |
-| **DevOps** | <img src="https://skillicons.dev/icons?i=docker,linux,nginx,cloudflare" height="36" alt="Docker, Linux, Nginx, Cloudflare" /><br>Docker · Docker Compose · Linux · Nginx · Cloudflare · MinIO |
-| **Observability** | <img src="https://skillicons.dev/icons?i=grafana,prometheus" height="36" alt="Grafana, Prometheus" /><br>Grafana · Prometheus · Loki · Node Exporter · Netdata |
-| **Tools** | <img src="https://skillicons.dev/icons?i=git,github" height="36" alt="Git, GitHub" /><br>Git · GitHub · Cloudinary |
+### Features
 
-## How I approach engineering
+* Product management
+* Product variants
+* Size management
+* Inventory tracking
+* Shopping cart
+* Cart items
+* Authentication
+* JWT
+* Product image management
 
-- **Measure before optimizing.** A slow endpoint is a hypothesis until I've looked at the queries and the timings.
-- **Design security in from the start.** Authentication and permissions are much harder to add after the data model is set.
-- **Think about production early.** Deployment, logs and metrics shape how I build, not just how I ship.
-- **Debug from evidence.** Logs, metrics and query plans over guesses.
-- **Keep it readable.** Simple code that the next person can maintain is worth more than clever code.
+**Stack**
 
-## Currently learning
+`Java` · `Spring Boot` · `Spring Security` · `PostgreSQL` · `Redis` · `JWT` · `Cloudinary`
 
-- Reading query plans more fluently and tuning databases with them
-- System design and scaling patterns for backend services
-- CI/CD pipelines for repeatable deployments
-- Distributed tracing to complement existing logs and metrics
+---
 
-## GitHub activity
+# 📋 03 · Task Management System
 
-<p>
-  <img height="150" alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=loemratana&show_icons=true&hide_border=true&theme=transparent&title_color=58a6ff&icon_color=58a6ff&text_color=8b949e" />
-  <img height="150" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=loemratana&layout=compact&langs_count=6&hide_border=true&theme=transparent&title_color=58a6ff&text_color=8b949e" />
+### `Spring Boot · PostgreSQL · React Native`
+
+A task and workforce management platform.
+
+```text
+Organization
+      ↓
+Department
+      ↓
+Employee
+      ↓
+Task
+      ↓
+Subtask
+```
+
+### Features
+
+* Task management
+* Subtasks
+* Role-based access
+* KPI tracking
+* Approval workflows
+* Employee management
+* Department management
+* Mobile client
+
+**Stack**
+
+`Java` · `Spring Boot` · `PostgreSQL` · `React Native` · `Expo`
+
+---
+
+# 🌐 04 · CMS / Landing Page Platform
+
+### `Node.js · MongoDB · Next.js`
+
+A CMS platform with a public website and administrative dashboard.
+
+```text
+Admin
+  ↓
+CMS
+  ↓
+MongoDB
+  ↓
+Public Website
+```
+
+### Features
+
+* Hero banners
+* Community posts
+* Media management
+* Awards
+* Content publishing
+* Admin dashboard
+* Analytics charts
+
+**Stack**
+
+`Node.js` · `Express.js` · `MongoDB` · `Mongoose` · `Next.js` · `Tailwind CSS` · `Recharts`
+
+---
+
+# 🛠️ Tech Stack
+
+### Languages
+
+![Java](https://skillicons.dev/icons?i=java)
+![JavaScript](https://skillicons.dev/icons?i=js)
+
+`Java` · `JavaScript`
+
+### Backend
+
+![Spring](https://skillicons.dev/icons?i=spring)
+![Node.js](https://skillicons.dev/icons?i=nodejs)
+![Express](https://skillicons.dev/icons?i=express)
+
+`Spring Boot` · `Spring Security` · `Node.js` · `Express.js` · `REST` · `JWT`
+
+### Frontend
+
+![React](https://skillicons.dev/icons?i=react)
+![Next.js](https://skillicons.dev/icons?i=nextjs)
+![Tailwind](https://skillicons.dev/icons?i=tailwind)
+
+`React` · `Next.js` · `React Native` · `Expo` · `Tailwind CSS`
+
+### Database
+
+![PostgreSQL](https://skillicons.dev/icons?i=postgres)
+![MongoDB](https://skillicons.dev/icons?i=mongodb)
+![Redis](https://skillicons.dev/icons?i=redis)
+
+`PostgreSQL` · `MongoDB` · `Redis` · `Prisma` · `Mongoose`
+
+### Infrastructure
+
+![Docker](https://skillicons.dev/icons?i=docker)
+![Linux](https://skillicons.dev/icons?i=linux)
+![Nginx](https://skillicons.dev/icons?i=nginx)
+![Cloudflare](https://skillicons.dev/icons?i=cloudflare)
+
+`Docker` · `Docker Compose` · `Linux` · `Nginx` · `Cloudflare` · `MinIO`
+
+### Observability
+
+![Grafana](https://skillicons.dev/icons?i=grafana)
+![Prometheus](https://skillicons.dev/icons?i=prometheus)
+
+`Grafana` · `Prometheus` · `Loki` · `Node Exporter` · `Netdata`
+
+---
+
+# 🧭 My Engineering Principles
+
+### 01 — Measure before optimizing
+
+> A slow endpoint is a hypothesis until I measure it.
+
+### 02 — Follow the data
+
+> Logs, metrics and query plans are more useful than guesses.
+
+### 03 — Design security early
+
+> Authentication and authorization should be part of the architecture.
+
+### 04 — Think about production
+
+> Deployment, monitoring and failure handling influence how I build the application.
+
+### 05 — Keep systems understandable
+
+> Simple, readable code is easier to debug, scale and maintain.
+
+---
+
+# 📚 Currently Learning
+
+```text
+Database Engineering
+        ↓
+Query Plans · Indexing · Transactions
+        ↓
+System Design
+        ↓
+Scalability · Caching · Concurrency
+        ↓
+Production Engineering
+        ↓
+CI/CD · Observability · Distributed Tracing
+```
+
+Currently focusing on:
+
+* Reading PostgreSQL query plans more fluently
+* Database performance tuning
+* System design and scalability
+* Concurrency and transaction design
+* CI/CD automation
+* Distributed tracing
+* Production observability
+
+---
+
+# 📈 GitHub Activity
+
+<p align="center">
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=loemratana&show_icons=true&hide_border=true&theme=transparent&title_color=58a6ff&icon_color=58a6ff&text_color=8b949e" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=loemratana&layout=compact&langs_count=6&hide_border=true&theme=transparent&title_color=58a6ff&text_color=8b949e" />
 </p>
 
-## Contact
+---
 
-Always happy to talk about backend systems, performance and deployment.
+# 💬 Let's Talk
 
-- Email: [loemratana63@gmail.com](mailto:loemratana63@gmail.com)
+I'm
