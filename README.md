@@ -1,553 +1,258 @@
-# 👋 Hi, I'm Ratana
+<div align="center">
+
+# RATANA
 
 ### Full-Stack Developer · Backend-Focused · System Builder
 
-I build **backend systems, APIs, databases, and production infrastructure**.
+**I build things, break things, understand why, and make them better.**
 
-I'm interested in more than making features work.
+<br/>
 
-I like understanding:
+<a href="https://github.com/loemratana">
+  <img src="https://img.shields.io/badge/GitHub-000?style=flat-square&logo=github" />
+</a>
+<a href="mailto:loemratana63@gmail.com">
+  <img src="https://img.shields.io/badge/Email-000?style=flat-square&logo=gmail" />
+</a>
 
-> **Why is this slow?**
-> **Where is the bottleneck?**
-> **What happens when traffic increases?**
-> **How should the data be modelled?**
-> **How do we know the system is healthy?**
-
----
-
-## 🧠 How I Think About Systems
-
-I usually approach a problem like this:
-
-```text
-             ┌──────────────────┐
-             │     Problem      │
-             └────────┬─────────┘
-                      ↓
-             ┌──────────────────┐
-             │     Measure      │
-             │ logs · metrics   │
-             │ query timings    │
-             └────────┬─────────┘
-                      ↓
-             ┌──────────────────┐
-             │ Find Bottleneck  │
-             │ API · DB · I/O   │
-             │ network · code   │
-             └────────┬─────────┘
-                      ↓
-             ┌──────────────────┐
-             │     Analyze      │
-             │ query plans      │
-             │ data flow        │
-             │ access patterns  │
-             └────────┬─────────┘
-                      ↓
-             ┌──────────────────┐
-             │     Optimize     │
-             │ index · query    │
-             │ architecture     │
-             └────────┬─────────┘
-                      ↓
-             ┌──────────────────┐
-             │    Measure Again │
-             └──────────────────┘
-```
-
-I prefer **evidence over assumptions**.
+</div>
 
 ---
 
-# 🏗️ What I Build
+<div align="center">
 
-| Area              | What I work on                                              |
-| ----------------- | ----------------------------------------------------------- |
-| ⚙️ Backend        | REST APIs, business logic, authentication, workflows        |
-| 🗄️ Database      | Data modelling, indexes, queries, aggregation, transactions |
-| 🔐 Security       | JWT, RBAC, OTP, email verification, password recovery       |
-| ⚡ Performance     | API latency, database bottlenecks, query optimization       |
-| 🌐 Frontend       | React, Next.js, React Native                                |
-| 🚀 Infrastructure | Docker, Nginx, VPS, Cloudflare, SSL                         |
-| 📊 Observability  | Grafana, Prometheus, Loki, Node Exporter, Netdata           |
-
----
-
-# ⚙️ Backend Engineering
-
-### Java / Spring Boot
+## ⚡ ENGINEERING MINDSET
 
 ```text
-Controller
-    ↓
-Service
-    ↓
-Repository
-    ↓
-Database
-```
-
-I focus on keeping the layers clear and making business logic easy to test and maintain.
-
-### Node.js / Express
-
-```text
-Request
-   ↓
-Middleware
-   ↓
-Validation
-   ↓
-Controller
-   ↓
-Service
-   ↓
-Database / Storage
-```
-
-I use Node.js when the application benefits from a lightweight API architecture and fast iteration.
-
----
-
-# 🗄️ Database Engineering
-
-I don't treat the database as just a place to store data.
-
-I think about:
-
-```text
-Data Model
-    ↓
-Access Pattern
-    ↓
-Query
-    ↓
-Query Plan
-    ↓
-Index
-    ↓
-Performance
-```
-
-### Technologies
-
-**PostgreSQL** · **MongoDB** · **Redis**
-
-### Things I care about
-
-* Choosing indexes based on real query patterns
-* Avoiding unnecessary data loading
-* Understanding query execution plans
-* Optimizing aggregation queries
-* Designing relationships and constraints
-* Handling transactions and concurrent operations
-* Using caching where it actually helps
-
----
-
-# ⚡ Performance Engineering
-
-When an endpoint is slow, I don't immediately add more hardware.
-
-I investigate.
-
-```text
-Slow Request
-     ↓
-┌────────────────────┐
-│ API timing         │
-├────────────────────┤
-│ Database timing    │
-├────────────────────┤
-│ Query execution    │
-├────────────────────┤
-│ Network / I/O      │
-├────────────────────┤
-│ Application logic  │
-└────────────────────┘
-     ↓
-Find the actual bottleneck
-     ↓
-Optimize
-     ↓
-Benchmark again
-```
-
-### Typical optimizations
-
-* Database indexes
-* Query optimization
-* Aggregation optimization
-* Pagination
-* Selecting only required fields
-* Reducing unnecessary database requests
-* Caching frequently accessed data
-* Improving API response payloads
-
----
-
-# 🔐 Security
-
-Security is part of the system design, not something added at the end.
-
-```text
-Authentication
-      ↓
-Authorization
-      ↓
-Permission Check
-      ↓
-Input Validation
-      ↓
-Business Logic
-      ↓
-Data Access
-```
-
-### Implemented
-
-* JWT authentication
-* Role-Based Access Control
-* Permission systems
-* OTP authentication
-* Email verification
-* Password reset with email OTP
-* Request validation
-
----
-
-# 🚀 Production & Infrastructure
-
-I also like the part of development that happens after the code is finished.
-
-```text
-                    Internet
+                 ┌───────────┐
+                 │   BUILD   │
+                 └─────┬─────┘
                        │
                        ▼
-              ┌─────────────────┐
-              │    Cloudflare   │
-              │   DNS / SSL     │
-              └────────┬────────┘
-                       ↓
-              ┌─────────────────┐
-              │      Nginx      │
-              │ Reverse Proxy   │
-              └────────┬────────┘
-                       ↓
-              ┌─────────────────┐
-              │     Docker      │
-              │ Docker Compose  │
-              └────────┬────────┘
-                       ↓
-              ┌─────────────────┐
-              │    Backend API  │
-              └───────┬─────────┘
-                      / \
-                     /   \
-                    ↓     ↓
-              Database   Storage
-              PostgreSQL MongoDB
-              Redis      MinIO
+                 ┌───────────┐
+                 │  MEASURE  │
+                 └─────┬─────┘
+                       │
+                       ▼
+                 ┌───────────┐
+                 │ UNDERSTAND│
+                 └─────┬─────┘
+                       │
+                       ▼
+                 ┌───────────┐
+                 │  IMPROVE  │
+                 └─────┬─────┘
+                       │
+                       └──────────────► 🔁
 ```
 
-### Infrastructure
-
-**Docker** · **Docker Compose** · **Linux** · **Nginx** · **Cloudflare** · **MinIO**
+</div>
 
 ---
 
-# 📊 Observability
+## 🧠 WHO I AM
 
-A production system should tell you what is happening.
+I'm a **backend-focused full-stack developer** who enjoys understanding how software works beneath the surface.
+
+I care about more than making an application work.
+
+I care about:
+
+`Why?` → `How?` → `What happens under load?` → `How can it be better?`
+
+My strongest interests are:
+
+* Backend engineering
+* Database design
+* API development
+* Authentication & security
+* Performance
+* Concurrency
+* Infrastructure
+* Observability
+* System design
+
+---
+
+## 🛠️ MY TOOLBOX
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=java,spring,nodejs,express,typescript,javascript,react,nextjs,flutter,postgres,mongodb,redis,docker,nginx,linux,git,github,grafana,prometheus" />
+
+</div>
+
+---
+
+## 🔥 WHAT I'M INTO
 
 ```text
-Application
-     │
-     ├──────────► Logs ───────► Loki
-     │
-     ├──────────► Metrics ────► Prometheus
-     │
-     └──────────► Dashboard ──► Grafana
-                              │
-                              ▼
-                         Investigation
+BACKEND
+████████████████████████████████
+
+DATABASE
+████████████████████████████
+
+SECURITY
+██████████████████████████
+
+PERFORMANCE
+████████████████████████
+
+INFRASTRUCTURE
+██████████████████████
+
+FRONTEND
+██████████████████
 ```
 
-I use observability to answer questions like:
-
-* Which endpoint is slow?
-* Is the database the bottleneck?
-* Is CPU or memory increasing?
-* Are errors increasing?
-* Is a container unhealthy?
-* Did a deployment introduce a regression?
+> Not a skill ranking — just the areas I enjoy exploring.
 
 ---
 
-# 🧩 Selected Projects
+## 🧩 HOW I LEARN
 
-## 01 · Depot Assessment & Tracking System
-
-### `Backend · Performance · Security · Production`
-
-A business assessment and tracking platform involving API development, evaluation workflows, authentication, reporting and production infrastructure.
-
-### 🔍 The interesting part
-
-This wasn't just CRUD.
-
-I worked on investigating **why APIs were slow**, then traced the problem through the application and database.
+I prefer learning by **building and investigating**.
 
 ```text
-Slow API
-   ↓
-Measure request time
-   ↓
-Inspect database queries
-   ↓
-Check query patterns
-   ↓
-Add / improve indexes
-   ↓
-Reduce unnecessary data
-   ↓
-Optimize aggregation
-   ↓
-Measure again
+        Learn
+          │
+          ▼
+       Build
+          │
+          ▼
+       Break
+          │
+          ▼
+     Investigate
+          │
+          ▼
+      Understand
+          │
+          ▼
+       Improve
+          │
+          └──────────► Repeat
 ```
 
-### Built / improved
+I learn best when I can go from:
 
-* REST APIs
-* Assessment workflows
-* Evaluation management
-* Filtering and searching
-* Dashboard and KPI queries
-* Database indexes
-* Aggregation queries
-* JWT authentication
-* RBAC / permissions
-* OTP verification
-* Password reset
-* Docker deployment
-* Production monitoring
-
-**Focus:** `Performance · Database · Security · Deployment`
+**Concept → Code → Failure → Debugging → Understanding**
 
 ---
 
-# 🛒 02 · E-Commerce System
+## 📚 CURRENTLY LEARNING
 
-### `Spring Boot · PostgreSQL · Redis`
+### Backend Engineering
 
-Backend system for an online store with products, variants, sizes and inventory.
+`Spring Boot` · `Node.js` · `REST APIs`
 
-```text
-Product
-   │
-   ├── Variant
-   │      └── Inventory
-   │
-   └── Images
-```
+### Database Engineering
 
-### Features
+`PostgreSQL` · `MongoDB` · `Indexing` · `Transactions` · `Locking` · `Query Optimization`
 
-* Product management
-* Product variants
-* Size management
-* Inventory tracking
-* Shopping cart
-* Cart items
-* Authentication
-* JWT
-* Product image management
+### System Design
 
-**Stack**
+`Scalability` · `Caching` · `Concurrency` · `Reliability`
 
-`Java` · `Spring Boot` · `Spring Security` · `PostgreSQL` · `Redis` · `JWT` · `Cloudinary`
+### DevOps
 
----
-
-# 📋 03 · Task Management System
-
-### `Spring Boot · PostgreSQL · React Native`
-
-A task and workforce management platform.
-
-```text
-Organization
-      ↓
-Department
-      ↓
-Employee
-      ↓
-Task
-      ↓
-Subtask
-```
-
-### Features
-
-* Task management
-* Subtasks
-* Role-based access
-* KPI tracking
-* Approval workflows
-* Employee management
-* Department management
-* Mobile client
-
-**Stack**
-
-`Java` · `Spring Boot` · `PostgreSQL` · `React Native` · `Expo`
-
----
-
-# 🌐 04 · CMS / Landing Page Platform
-
-### `Node.js · MongoDB · Next.js`
-
-A CMS platform with a public website and administrative dashboard.
-
-```text
-Admin
-  ↓
-CMS
-  ↓
-MongoDB
-  ↓
-Public Website
-```
-
-### Features
-
-* Hero banners
-* Community posts
-* Media management
-* Awards
-* Content publishing
-* Admin dashboard
-* Analytics charts
-
-**Stack**
-
-`Node.js` · `Express.js` · `MongoDB` · `Mongoose` · `Next.js` · `Tailwind CSS` · `Recharts`
-
----
-
-# 🛠️ Tech Stack
-
-### Languages
-
-![Java](https://skillicons.dev/icons?i=java)
-![JavaScript](https://skillicons.dev/icons?i=js)
-
-`Java` · `JavaScript`
-
-### Backend
-
-![Spring](https://skillicons.dev/icons?i=spring)
-![Node.js](https://skillicons.dev/icons?i=nodejs)
-![Express](https://skillicons.dev/icons?i=express)
-
-`Spring Boot` · `Spring Security` · `Node.js` · `Express.js` · `REST` · `JWT`
+`Docker` · `Nginx` · `Linux` · `CI/CD` · `Monitoring`
 
 ### Frontend
 
-![React](https://skillicons.dev/icons?i=react)
-![Next.js](https://skillicons.dev/icons?i=nextjs)
-![Tailwind](https://skillicons.dev/icons?i=tailwind)
-
-`React` · `Next.js` · `React Native` · `Expo` · `Tailwind CSS`
-
-### Database
-
-![PostgreSQL](https://skillicons.dev/icons?i=postgres)
-![MongoDB](https://skillicons.dev/icons?i=mongodb)
-![Redis](https://skillicons.dev/icons?i=redis)
-
-`PostgreSQL` · `MongoDB` · `Redis` · `Prisma` · `Mongoose`
-
-### Infrastructure
-
-![Docker](https://skillicons.dev/icons?i=docker)
-![Linux](https://skillicons.dev/icons?i=linux)
-![Nginx](https://skillicons.dev/icons?i=nginx)
-![Cloudflare](https://skillicons.dev/icons?i=cloudflare)
-
-`Docker` · `Docker Compose` · `Linux` · `Nginx` · `Cloudflare` · `MinIO`
-
-### Observability
-
-![Grafana](https://skillicons.dev/icons?i=grafana)
-![Prometheus](https://skillicons.dev/icons?i=prometheus)
-
-`Grafana` · `Prometheus` · `Loki` · `Node Exporter` · `Netdata`
+`React` · `Next.js` · `TypeScript`
 
 ---
 
-# 🧭 My Engineering Principles
+## 📈 MY GROWTH LOOP
 
-### 01 — Measure before optimizing
-
-> A slow endpoint is a hypothesis until I measure it.
-
-### 02 — Follow the data
-
-> Logs, metrics and query plans are more useful than guesses.
-
-### 03 — Design security early
-
-> Authentication and authorization should be part of the architecture.
-
-### 04 — Think about production
-
-> Deployment, monitoring and failure handling influence how I build the application.
-
-### 05 — Keep systems understandable
-
-> Simple, readable code is easier to debug, scale and maintain.
-
----
-
-# 📚 Currently Learning
+<div align="center">
 
 ```text
-Database Engineering
-        ↓
-Query Plans · Indexing · Transactions
-        ↓
-System Design
-        ↓
-Scalability · Caching · Concurrency
-        ↓
-Production Engineering
-        ↓
-CI/CD · Observability · Distributed Tracing
+       ┌───────────────┐
+       │    CURIOUS    │
+       └───────┬───────┘
+               ↓
+       ┌───────────────┐
+       │   EXPLORE     │
+       └───────┬───────┘
+               ↓
+       ┌───────────────┐
+       │    BUILD      │
+       └───────┬───────┘
+               ↓
+       ┌───────────────┐
+       │    DEBUG      │
+       └───────┬───────┘
+               ↓
+       ┌───────────────┐
+       │   UNDERSTAND  │
+       └───────┬───────┘
+               ↓
+       ┌───────────────┐
+       │    REPEAT     │
+       └───────┬───────┘
+               │
+               └──────────────► 🚀
 ```
 
-Currently focusing on:
-
-* Reading PostgreSQL query plans more fluently
-* Database performance tuning
-* System design and scalability
-* Concurrency and transaction design
-* CI/CD automation
-* Distributed tracing
-* Production observability
+</div>
 
 ---
 
-# 📈 GitHub Activity
+## 🎯 WHAT I VALUE
 
-<p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=loemratana&show_icons=true&hide_border=true&theme=transparent&title_color=58a6ff&icon_color=58a6ff&text_color=8b949e" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=loemratana&layout=compact&langs_count=6&hide_border=true&theme=transparent&title_color=58a6ff&text_color=8b949e" />
-</p>
+| Principle               | Meaning                                |
+| ----------------------- | -------------------------------------- |
+| **Understand > Copy**   | Know why something works               |
+| **Measure > Guess**     | Use data to find problems              |
+| **Simple > Clever**     | Prefer understandable solutions        |
+| **Secure by Design**    | Security starts early                  |
+| **Consistency > Speed** | Build reliable habits                  |
+| **Learn by Building**   | Theory becomes useful through practice |
 
 ---
 
-# 💬 Let's Talk
+## 💭 CURRENT FOCUS
 
-I'm
+```text
+┌──────────────────────────────────────────────┐
+│                                              │
+│          DEEPER BACKEND ENGINEERING          │
+│                                              │
+│   Database        ████████████████████       │
+│   Concurrency     ██████████████████         │
+│   Performance     █████████████████          │
+│   Security        █████████████████          │
+│   System Design   ████████████████           │
+│                                              │
+└──────────────────────────────────────────────┘
+```
+
+---
+
+## 🌱 A LITTLE MORE
+
+```text
+Backend       →  Where I spend most of my time
+Full-stack    →  Where I connect everything
+Database      →  Where I like going deep
+Debugging     →  Where I learn the most
+Performance   →  Where curiosity starts
+Architecture  →  Where everything comes together
+```
+
+---
+
+<div align="center">
+
+## BUILD. BREAK. UNDERSTAND. IMPROVE.
+
+### — RATANA —
+
+<br/>
+
+<img src="https://komarev.com/ghpvc/?username=loemratana&style=flat-square&color=grey" />
+
+</div>
