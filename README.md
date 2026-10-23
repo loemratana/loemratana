@@ -51,13 +51,15 @@ My strongest interests are:
 
 ## 🛠️ MY TOOLBOX
 
-<div align="center">
+My stack, layer by layer, the way a request travels through it.
 
-<img src="assets/stack.svg" width="100%" alt="Tech stack by layer" />
-
-<img src="https://skillicons.dev/icons?i=java,spring,nodejs,express,typescript,javascript,react,nextjs,flutter,postgres,mongodb,redis,docker,nginx,linux,git,github,grafana,prometheus" />
-
-</div>
+| Layer | Tools | What I use them for |
+| ----- | ----- | ------------------- |
+| **Client** | <img src="https://skillicons.dev/icons?i=react,nextjs,ts,js,flutter" /> | Web UIs with React & Next.js in TypeScript, plus mobile apps with Flutter |
+| **Edge** | <img src="https://skillicons.dev/icons?i=nginx,linux" /> | Reverse proxying, TLS and load balancing on Linux servers |
+| **Services** | <img src="https://skillicons.dev/icons?i=java,spring,nodejs,express" /> | REST APIs with Spring Boot (Spring Security, JPA/Hibernate) and Node.js/Express — where I spend most of my time |
+| **Data** | <img src="https://skillicons.dev/icons?i=postgres,redis,mongodb" /> | PostgreSQL as the source of truth, Redis for caching, MongoDB for document data |
+| **Ship & Observe** | <img src="https://skillicons.dev/icons?i=docker,git,github,prometheus,grafana" /> | Containerized deploys, version control & CI, and metrics dashboards to see what's really happening |
 
 ---
 
