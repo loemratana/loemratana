@@ -111,33 +111,7 @@ I learn best when I can go from:
 
 <div align="center">
 
-```text
-       ┌───────────────┐
-       │    CURIOUS    │
-       └───────┬───────┘
-               ↓
-       ┌───────────────┐
-       │   EXPLORE     │
-       └───────┬───────┘
-               ↓
-       ┌───────────────┐
-       │    BUILD      │
-       └───────┬───────┘
-               ↓
-       ┌───────────────┐
-       │    DEBUG      │
-       └───────┬───────┘
-               ↓
-       ┌───────────────┐
-       │   UNDERSTAND  │
-       └───────┬───────┘
-               ↓
-       ┌───────────────┐
-       │    REPEAT     │
-       └───────┬───────┘
-               │
-               └──────────────► 🚀
-```
+<img src="assets/growth.svg" width="100%" alt="Growth loop: Curious, Explore, Build, Debug, Understand, Repeat" />
 
 </div>
 
@@ -168,14 +142,7 @@ I learn best when I can go from:
 
 ## 🌱 A LITTLE MORE
 
-```text
-Backend       →  Where I spend most of my time
-Full-stack    →  Where I connect everything
-Database      →  Where I like going deep
-Debugging     →  Where I learn the most
-Performance   →  Where curiosity starts
-Architecture  →  Where everything comes together
-```
+<img src="assets/more.svg" width="100%" alt="Backend, Full-stack, Database, Debugging, Performance, Architecture — and where each fits" />
 
 ---
 
