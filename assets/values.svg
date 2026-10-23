@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="324" viewBox="0 0 840 324" role="img" aria-label="What I value: Understand over copy — Know why something works. Measure over guess — Use data to find problems. Simple over clever — Prefer understandable solutions. Secure by design — Security starts early. Consistency over speed — Build reliable habits. Learn by building — Practice makes theory useful."><style>
+text{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif}
+.m{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace}
+.bg{fill:#ffffff;stroke:#d0d7de}
+.s2{fill:#f3f5fa}
+.ln{stroke:#d0d7de;fill:none}
+.fg{fill:#1f2328}
+.mu{fill:#59636e}
+.ac{fill:#2c4bd6}
+.acs{stroke:#2c4bd6;fill:none}
+.acsoft{fill:#e3e8fc}
+.good{fill:#1a7f37}
+.goods{stroke:#1a7f37}
+.miss{fill:#bc4c00}
+.misss{stroke:#bc4c00}
+.sig{fill:#9a6700}
+.node{fill:#f3f5fa;stroke:#d0d7de}
+.goodsoft{fill:#dafbe1}
+.misssoft{fill:#fff1e5}
+@media (prefers-color-scheme: dark){
+.bg{fill:#0d1117;stroke:#30363d}
+.s2{fill:#161b22}
+.ln{stroke:#30363d}
+.fg{fill:#e6edf3}
+.mu{fill:#8d96a0}
+.ac{fill:#7c93ff}
+.acs{stroke:#7c93ff}
+.acsoft{fill:#1c2650}
+.good{fill:#3fb950}
+.goods{stroke:#3fb950}
+.miss{fill:#f0883e}
+.misss{stroke:#f0883e}
+.sig{fill:#e3b341}
+.node{fill:#161b22;stroke:#30363d}
+.goodsoft{fill:#12261b}
+.misssoft{fill:#2d1c0f}
+}
+@media (prefers-reduced-motion: reduce){ .anim{display:none} }
+</style><rect class="bg" x="0.5" y="0.5" width="839" height="323" rx="12"/><text class="m mu" x="32" y="40" font-size="12" letter-spacing="1.5">WHAT I VALUE</text><rect class="node" x="32" y="64" width="242" height="104" rx="10" style="stroke-width:1.2"/><text class="m mu" x="52" y="92" font-size="11" letter-spacing="1">01</text><text x="52" y="120" font-size="20" font-weight="700"><tspan class="fg">Understand</tspan><tspan class="m ac" font-size="12" font-weight="400" dx="8">over copy</tspan></text><text class="mu" x="52" y="146" font-size="12.5">Know why something works</text><rect class="node" x="297" y="64" width="242" height="104" rx="10" style="stroke-width:1.2"/><text class="m mu" x="317" y="92" font-size="11" letter-spacing="1">02</text><text x="317" y="120" font-size="20" font-weight="700"><tspan class="fg">Measure</tspan><tspan class="m ac" font-size="12" font-weight="400" dx="8">over guess</tspan></text><text class="mu" x="317" y="146" font-size="12.5">Use data to find problems</text><rect class="node" x="562" y="64" width="242" height="104" rx="10" style="stroke-width:1.2"/><text class="m mu" x="582" y="92" font-size="11" letter-spacing="1">03</text><text x="582" y="120" font-size="20" font-weight="700"><tspan class="fg">Simple</tspan><tspan class="m ac" font-size="12" font-weight="400" dx="8">over clever</tspan></text><text class="mu" x="582" y="146" font-size="12.5">Prefer understandable solutions</text><rect class="node" x="32" y="188" width="242" height="104" rx="10" style="stroke-width:1.2"/><text class="m mu" x="52" y="216" font-size="11" letter-spacing="1">04</text><text x="52" y="244" font-size="20" font-weight="700"><tspan class="fg">Secure</tspan><tspan class="m ac" font-size="12" font-weight="400" dx="8">by design</tspan></text><text class="mu" x="52" y="270" font-size="12.5">Security starts early</text><rect class="node" x="297" y="188" width="242" height="104" rx="10" style="stroke-width:1.2"/><text class="m mu" x="317" y="216" font-size="11" letter-spacing="1">05</text><text x="317" y="244" font-size="20" font-weight="700"><tspan class="fg">Consistency</tspan><tspan class="m ac" font-size="12" font-weight="400" dx="8">over speed</tspan></text><text class="mu" x="317" y="270" font-size="12.5">Build reliable habits</text><rect class="node" x="562" y="188" width="242" height="104" rx="10" style="stroke-width:1.2"/><text class="m mu" x="582" y="216" font-size="11" letter-spacing="1">06</text><text x="582" y="244" font-size="20" font-weight="700"><tspan class="fg">Learn</tspan><tspan class="m ac" font-size="12" font-weight="400" dx="8">by building</tspan></text><text class="mu" x="582" y="270" font-size="12.5">Practice makes theory useful</text></svg>

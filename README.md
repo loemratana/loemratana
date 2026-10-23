@@ -77,56 +77,25 @@ I prefer learning by **building and investigating**.
 
 <img src="assets/learn.svg" width="100%" alt="How I learn: Learn, Build, Break, Investigate, Understand, Improve" />
 
-I learn best when I can go from:
-
-**Concept → Code → Failure → Debugging → Understanding**
-
 ---
 
 ## 📚 CURRENTLY LEARNING
 
-### Backend Engineering
-
-`Spring Boot` · `Node.js` · `REST APIs`
-
-### Database Engineering
-
-`PostgreSQL` · `MongoDB` · `Indexing` · `Transactions` · `Locking` · `Query Optimization`
-
-### System Design
-
-`Scalability` · `Caching` · `Concurrency` · `Reliability`
-
-### DevOps
-
-`Docker` · `Nginx` · `Linux` · `CI/CD` · `Monitoring`
-
-### Frontend
-
-`React` · `Next.js` · `TypeScript`
+<img src="assets/learning.svg" width="100%" alt="Currently learning: Backend, Database, System Design, DevOps, Frontend" />
 
 ---
 
 ## 📈 MY GROWTH LOOP
 
-<div align="center">
+Every project starts with a question and ends with a better one.
 
 <img src="assets/growth.svg" width="100%" alt="Growth loop: Curious, Explore, Build, Debug, Understand, Repeat" />
-
-</div>
 
 ---
 
 ## 🎯 WHAT I VALUE
 
-| Principle               | Meaning                                |
-| ----------------------- | -------------------------------------- |
-| **Understand > Copy**   | Know why something works               |
-| **Measure > Guess**     | Use data to find problems              |
-| **Simple > Clever**     | Prefer understandable solutions        |
-| **Secure by Design**    | Security starts early                  |
-| **Consistency > Speed** | Build reliable habits                  |
-| **Learn by Building**   | Theory becomes useful through practice |
+<img src="assets/values.svg" width="100%" alt="What I value: Understand over copy, Measure over guess, Simple over clever, Secure by design, Consistency over speed, Learn by building" />
 
 ---
 
