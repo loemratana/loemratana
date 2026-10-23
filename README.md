@@ -31,21 +31,7 @@ I'm a **backend-focused full-stack developer** who enjoys understanding how soft
 
 I care about more than making an application work.
 
-I care about:
-
-`Why?` → `How?` → `What happens under load?` → `How can it be better?`
-
-My strongest interests are:
-
-* Backend engineering
-* Database design
-* API development
-* Authentication & security
-* Performance
-* Concurrency
-* Infrastructure
-* Observability
-* System design
+<img src="assets/who.svg" width="100%" alt="I care about: Why? How? What happens under load? How can it be better? Strongest interests: backend, databases, APIs, security, performance, concurrency, infrastructure, observability, system design" />
 
 ---
 
