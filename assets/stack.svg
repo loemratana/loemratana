@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="416" viewBox="0 0 840 416" role="img" aria-label="Tech stack by layer: client, edge, services, data, ship and observe."><style>
+text{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif}
+.m{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace}
+.bg{fill:#ffffff;stroke:#d0d7de}
+.s2{fill:#f3f5fa}
+.ln{stroke:#d0d7de;fill:none}
+.fg{fill:#1f2328}
+.mu{fill:#59636e}
+.ac{fill:#2c4bd6}
+.acs{stroke:#2c4bd6;fill:none}
+.acsoft{fill:#e3e8fc}
+.good{fill:#1a7f37}
+.goods{stroke:#1a7f37}
+.miss{fill:#bc4c00}
+.misss{stroke:#bc4c00}
+.sig{fill:#9a6700}
+.node{fill:#f3f5fa;stroke:#d0d7de}
+.goodsoft{fill:#dafbe1}
+.misssoft{fill:#fff1e5}
+@media (prefers-color-scheme: dark){
+.bg{fill:#0d1117;stroke:#30363d}
+.s2{fill:#161b22}
+.ln{stroke:#30363d}
+.fg{fill:#e6edf3}
+.mu{fill:#8d96a0}
+.ac{fill:#7c93ff}
+.acs{stroke:#7c93ff}
+.acsoft{fill:#1c2650}
+.good{fill:#3fb950}
+.goods{stroke:#3fb950}
+.miss{fill:#f0883e}
+.misss{stroke:#f0883e}
+.sig{fill:#e3b341}
+.node{fill:#161b22;stroke:#30363d}
+.goodsoft{fill:#12261b}
+.misssoft{fill:#2d1c0f}
+}
+@media (prefers-reduced-motion: reduce){ .anim{display:none} }
+</style><rect class="bg" x="0.5" y="0.5" width="839" height="415" rx="12"/><text class="m mu" x="32" y="40" font-size="12" letter-spacing="1">MY TOOLBOX, AS A REQUEST SEES IT</text><rect class="node" x="24" y="62" width="792" height="50" rx="9" stroke-width="1.1"/><text class="m mu" x="44" y="84" font-size="10" letter-spacing="1">L1</text><text class="m fg" x="44" y="99" font-size="13" font-weight="700">CLIENT</text><rect x="180" y="73" width="58" height="28" rx="6" class="bg"/><text class="m fg" x="209" y="91.7" font-size="13" text-anchor="middle">React</text><rect x="243.65" y="73" width="74" height="28" rx="6" class="bg"/><text class="m fg" x="280" y="91.7" font-size="13" text-anchor="middle">Next.js</text><rect x="323.15999999999997" y="73" width="97" height="28" rx="6" class="bg"/><text class="m fg" x="372" y="91.7" font-size="13" text-anchor="middle">TypeScript</text><rect x="426.46" y="73" width="97" height="28" rx="6" class="bg"/><text class="m fg" x="475" y="91.7" font-size="13" text-anchor="middle">JavaScript</text><rect x="529.76" y="73" width="74" height="28" rx="6" class="bg"/><text class="m fg" x="567" y="91.7" font-size="13" text-anchor="middle">Flutter</text><path class="acs" stroke-width="1.5" d="M420.0 114 V124"/><circle class="ac anim" r="3" cx="420.0" cy="112"><animate attributeName="cy" values="112;126" dur="1.2s" begin="0.0s" repeatCount="indefinite"/></circle><rect class="node" x="24" y="126" width="792" height="50" rx="9" stroke-width="1.1"/><text class="m mu" x="44" y="148" font-size="10" letter-spacing="1">L2</text><text class="m fg" x="44" y="163" font-size="13" font-weight="700">EDGE</text><rect x="180" y="137" width="58" height="28" rx="6" class="bg"/><text class="m fg" x="209" y="155.7" font-size="13" text-anchor="middle">Nginx</text><rect x="243.65" y="137" width="58" height="28" rx="6" class="bg"/><text class="m fg" x="272" y="155.7" font-size="13" text-anchor="middle">Linux</text><path class="acs" stroke-width="1.5" d="M420.0 178 V188"/><circle class="ac anim" r="3" cx="420.0" cy="176"><animate attributeName="cy" values="176;190" dur="1.2s" begin="0.25s" repeatCount="indefinite"/></circle><rect class="node" x="24" y="190" width="792" height="50" rx="9" stroke-width="1.1"/><text class="m mu" x="44" y="212" font-size="10" letter-spacing="1">L3</text><text class="m fg" x="44" y="227" font-size="13" font-weight="700">SERVICES</text><rect x="180" y="201" width="50" height="28" rx="6" class="acsoft"/><text class="m ac" x="205" y="219.7" font-size="13" text-anchor="middle">Java</text><rect x="235.72" y="201" width="105" height="28" rx="6" class="acsoft"/><text class="m ac" x="288" y="219.7" font-size="13" text-anchor="middle">Spring Boot</text><rect x="346.95" y="201" width="74" height="28" rx="6" class="acsoft"/><text class="m ac" x="384" y="219.7" font-size="13" text-anchor="middle">Node.js</text><rect x="426.46" y="201" width="74" height="28" rx="6" class="bg"/><text class="m fg" x="463" y="219.7" font-size="13" text-anchor="middle">Express</text><rect x="505.96999999999997" y="201" width="137" height="28" rx="6" class="bg"/><text class="m fg" x="574" y="219.7" font-size="13" text-anchor="middle">Spring Security</text><rect x="648.92" y="201" width="121" height="28" rx="6" class="bg"/><text class="m fg" x="709" y="219.7" font-size="13" text-anchor="middle">JPA/Hibernate</text><path class="acs" stroke-width="1.5" d="M420.0 242 V252"/><circle class="ac anim" r="3" cx="420.0" cy="240"><animate attributeName="cy" values="240;254" dur="1.2s" begin="0.5s" repeatCount="indefinite"/></circle><rect class="node" x="24" y="254" width="792" height="50" rx="9" stroke-width="1.1"/><text class="m mu" x="44" y="276" font-size="10" letter-spacing="1">L4</text><text class="m fg" x="44" y="291" font-size="13" font-weight="700">DATA</text><rect x="180" y="265" width="97" height="28" rx="6" class="acsoft"/><text class="m ac" x="229" y="283.7" font-size="13" text-anchor="middle">PostgreSQL</text><rect x="283.3" y="265" width="58" height="28" rx="6" class="acsoft"/><text class="m ac" x="312" y="283.7" font-size="13" text-anchor="middle">Redis</text><rect x="346.95" y="265" width="74" height="28" rx="6" class="bg"/><text class="m fg" x="384" y="283.7" font-size="13" text-anchor="middle">MongoDB</text><path class="acs" stroke-width="1.5" d="M420.0 306 V316"/><circle class="ac anim" r="3" cx="420.0" cy="304"><animate attributeName="cy" values="304;318" dur="1.2s" begin="0.75s" repeatCount="indefinite"/></circle><rect class="node" x="24" y="318" width="792" height="50" rx="9" stroke-width="1.1"/><text class="m mu" x="44" y="340" font-size="10" letter-spacing="1">L5</text><text class="m fg" x="44" y="355" font-size="13" font-weight="700">SHIP &amp; OBSERVE</text><rect x="180" y="329" width="66" height="28" rx="6" class="bg"/><text class="m fg" x="213" y="347.7" font-size="13" text-anchor="middle">Docker</text><rect x="251.57999999999998" y="329" width="42" height="28" rx="6" class="bg"/><text class="m fg" x="272" y="347.7" font-size="13" text-anchor="middle">Git</text><rect x="299.37" y="329" width="66" height="28" rx="6" class="bg"/><text class="m fg" x="332" y="347.7" font-size="13" text-anchor="middle">GitHub</text><rect x="370.95" y="329" width="97" height="28" rx="6" class="bg"/><text class="m fg" x="420" y="347.7" font-size="13" text-anchor="middle">Prometheus</text><rect x="474.25" y="329" width="74" height="28" rx="6" class="bg"/><text class="m fg" x="511" y="347.7" font-size="13" text-anchor="middle">Grafana</text><rect class="acsoft" x="32" y="386" width="12" height="12" rx="3"/><text class="m mu" x="52" y="397" font-size="12">where I spend most of my time</text></svg>

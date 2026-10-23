@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="160" viewBox="0 0 840 160" role="img" aria-label="Build. Break. Understand. Improve. — Ratana"><style>
+text{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif}
+.m{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace}
+.bg{fill:#ffffff;stroke:#d0d7de}
+.s2{fill:#f3f5fa}
+.ln{stroke:#d0d7de;fill:none}
+.fg{fill:#1f2328}
+.mu{fill:#59636e}
+.ac{fill:#2c4bd6}
+.acs{stroke:#2c4bd6;fill:none}
+.acsoft{fill:#e3e8fc}
+.good{fill:#1a7f37}
+.goods{stroke:#1a7f37}
+.miss{fill:#bc4c00}
+.misss{stroke:#bc4c00}
+.sig{fill:#9a6700}
+.node{fill:#f3f5fa;stroke:#d0d7de}
+.goodsoft{fill:#dafbe1}
+.misssoft{fill:#fff1e5}
+@media (prefers-color-scheme: dark){
+.bg{fill:#0d1117;stroke:#30363d}
+.s2{fill:#161b22}
+.ln{stroke:#30363d}
+.fg{fill:#e6edf3}
+.mu{fill:#8d96a0}
+.ac{fill:#7c93ff}
+.acs{stroke:#7c93ff}
+.acsoft{fill:#1c2650}
+.good{fill:#3fb950}
+.goods{stroke:#3fb950}
+.miss{fill:#f0883e}
+.misss{stroke:#f0883e}
+.sig{fill:#e3b341}
+.node{fill:#161b22;stroke:#30363d}
+.goodsoft{fill:#12261b}
+.misssoft{fill:#2d1c0f}
+}
+@media (prefers-reduced-motion: reduce){ .anim{display:none} }
+</style><rect class="bg" x="0.5" y="0.5" width="839" height="159" rx="12"/><text x="420.0" y="90" font-size="40" font-weight="800" letter-spacing="-1" text-anchor="middle"><tspan class="fg">BUILD. </tspan><tspan class="miss">BREAK. </tspan><tspan class="fg">UNDERSTAND. </tspan><tspan class="ac">IMPROVE.</tspan></text><text class="m mu" x="420.0" y="134" font-size="13" letter-spacing="3" text-anchor="middle">— RATANA —</text></svg>

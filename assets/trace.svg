@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="346" viewBox="0 0 840 346" role="img" aria-label="Animated request trace: Client to Nginx to Spring Boot, which checks Redis first and falls back to PostgreSQL on a cache miss."><style>
+text{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif}
+.m{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace}
+.bg{fill:#ffffff;stroke:#d0d7de}
+.s2{fill:#f3f5fa}
+.ln{stroke:#d0d7de;fill:none}
+.fg{fill:#1f2328}
+.mu{fill:#59636e}
+.ac{fill:#2c4bd6}
+.acs{stroke:#2c4bd6;fill:none}
+.acsoft{fill:#e3e8fc}
+.good{fill:#1a7f37}
+.goods{stroke:#1a7f37}
+.miss{fill:#bc4c00}
+.misss{stroke:#bc4c00}
+.sig{fill:#9a6700}
+.node{fill:#f3f5fa;stroke:#d0d7de}
+.goodsoft{fill:#dafbe1}
+.misssoft{fill:#fff1e5}
+@media (prefers-color-scheme: dark){
+.bg{fill:#0d1117;stroke:#30363d}
+.s2{fill:#161b22}
+.ln{stroke:#30363d}
+.fg{fill:#e6edf3}
+.mu{fill:#8d96a0}
+.ac{fill:#7c93ff}
+.acs{stroke:#7c93ff}
+.acsoft{fill:#1c2650}
+.good{fill:#3fb950}
+.goods{stroke:#3fb950}
+.miss{fill:#f0883e}
+.misss{stroke:#f0883e}
+.sig{fill:#e3b341}
+.node{fill:#161b22;stroke:#30363d}
+.goodsoft{fill:#12261b}
+.misssoft{fill:#2d1c0f}
+}
+@media (prefers-reduced-motion: reduce){ .anim{display:none} }
+</style><rect class="bg" x="0.5" y="0.5" width="839" height="345" rx="12"/><text class="m mu" x="32" y="36" font-size="12" letter-spacing="1">LIVE TRACE · CACHE-ASIDE READ PATH</text><path class="ln" stroke-width="1.6" d="M142 150 H196 M312 150 H366 M516 150 L600 86 M516 150 L600 214"/><path class="ln" stroke-width="1.6" stroke-dasharray="4 5" d="M516 150 L600 214"/><rect class="node" x="32" y="124.0" width="110" height="52" rx="9" stroke-width="1.2"/><text class="m fg" x="87.0" y="148" font-size="14" text-anchor="middle">Client</text><text class="m mu" x="87.0" y="166" font-size="11" text-anchor="middle">browser</text><rect class="node" x="196" y="124.0" width="116" height="52" rx="9" stroke-width="1.2"/><text class="m fg" x="254.0" y="148" font-size="14" text-anchor="middle">Nginx</text><text class="m mu" x="254.0" y="166" font-size="11" text-anchor="middle">proxy · TLS</text><rect class="node" x="366" y="116.0" width="150" height="68" rx="9" stroke-width="1.2"/><text class="m fg" x="441.0" y="148" font-size="14" text-anchor="middle">Spring Boot</text><text class="m mu" x="441.0" y="166" font-size="11" text-anchor="middle">JWT · RBAC</text><rect class="node" x="600" y="60" width="150" height="52" rx="9" stroke-width="1.2"/><text class="m fg" x="675" y="84" font-size="14" text-anchor="middle">Redis</text><text class="m mu" x="675" y="101" font-size="11" text-anchor="middle">TTL + jitter</text><rect class="node" x="600" y="188" width="150" height="52" rx="9" stroke-width="1.2"/><text class="m fg" x="675" y="212" font-size="14" text-anchor="middle">PostgreSQL</text><text class="m mu" x="675" y="229" font-size="11" text-anchor="middle">source of truth</text><g class="anim" opacity="0"><rect class="goodsoft" x="760" y="74" width="62" height="24" rx="5"/><text class="m good" x="791" y="90" font-size="12" font-weight="700" text-anchor="middle">HIT</text><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.18;0.2;0.38;0.42;1" dur="10s" repeatCount="indefinite"/></g><g class="anim" opacity="0"><rect class="misssoft" x="760" y="74" width="62" height="24" rx="5"/><text class="m miss" x="791" y="90" font-size="12" font-weight="700" text-anchor="middle">MISS</text><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6;0.62;0.9;0.94;1" dur="10s" repeatCount="indefinite"/></g><g class="anim" opacity="0"><rect class="goodsoft" x="760" y="202" width="62" height="24" rx="5"/><text class="m good" x="791" y="218" font-size="12" font-weight="700" text-anchor="middle">QUERY</text><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.68;0.7;0.9;0.94;1" dur="10s" repeatCount="indefinite"/></g><g class="anim"><circle class="ac" r="11" opacity=".22"/><circle class="ac" r="5.5"/><animateMotion dur="10s" repeatCount="indefinite" path="M142 150 L516 150 L600 86 L516 150 L142 150" keyPoints="0;1;1" keyTimes="0;0.42;1" calcMode="linear"/><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.42;0.42;1" dur="10s" repeatCount="indefinite"/></g><g class="anim"><circle class="ac" r="11" opacity=".22"/><circle class="ac" r="5.5"/><animateMotion dur="10s" repeatCount="indefinite" path="M142 150 L516 150 L600 86 L516 150 L600 214 L516 150 L600 86 L516 150 L142 150" keyPoints="0;0;1" keyTimes="0;0.45;1" calcMode="linear"/><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.45;0.45;1" dur="10s" repeatCount="indefinite"/></g><line class="ln" x1="24" y1="252" x2="816" y2="252"/><text class="m ac" x="32" y="280" font-size="13">GET</text><text class="m mu" x="78" y="280" font-size="13">/api/leave-requests?status=PENDING</text><text class="m good" x="690" y="280" font-size="12" font-weight="700">HIT</text><text class="m fg" x="808" y="280" font-size="13" text-anchor="end">14ms</text><text class="m ac" x="32" y="304" font-size="13">GET</text><text class="m mu" x="78" y="304" font-size="13">/api/products?page=0&amp;size=20</text><text class="m miss" x="690" y="304" font-size="12" font-weight="700">MISS</text><text class="m fg" x="808" y="304" font-size="13" text-anchor="end">96ms</text><text class="m ac" x="32" y="328" font-size="13">GET</text><text class="m mu" x="78" y="328" font-size="13">/api/employees/{id}</text><text class="m good" x="690" y="328" font-size="12" font-weight="700">HIT</text><text class="m fg" x="808" y="328" font-size="13" text-anchor="end">9ms</text></svg>

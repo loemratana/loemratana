@@ -1,10 +1,6 @@
 <div align="center">
 
-# RATANA
-
-### Full-Stack Developer · Backend-Focused · System Builder
-
-**I build things, break things, understand why, and make them better.**
+<img src="assets/header.svg" width="100%" alt="Ratana — Full-Stack Developer, Backend-Focused, System Builder" />
 
 <br/>
 
@@ -23,28 +19,7 @@
 
 ## ⚡ ENGINEERING MINDSET
 
-```text
-                 ┌───────────┐
-                 │   BUILD   │
-                 └─────┬─────┘
-                       │
-                       ▼
-                 ┌───────────┐
-                 │  MEASURE  │
-                 └─────┬─────┘
-                       │
-                       ▼
-                 ┌───────────┐
-                 │ UNDERSTAND│
-                 └─────┬─────┘
-                       │
-                       ▼
-                 ┌───────────┐
-                 │  IMPROVE  │
-                 └─────┬─────┘
-                       │
-                       └──────────────► 🔁
-```
+<img src="assets/loop.svg" width="100%" alt="Engineering loop: Build, Measure, Understand, Improve" />
 
 </div>
 
@@ -78,6 +53,8 @@ My strongest interests are:
 
 <div align="center">
 
+<img src="assets/stack.svg" width="100%" alt="Tech stack by layer" />
+
 <img src="https://skillicons.dev/icons?i=java,spring,nodejs,express,typescript,javascript,react,nextjs,flutter,postgres,mongodb,redis,docker,nginx,linux,git,github,grafana,prometheus" />
 
 </div>
@@ -86,25 +63,7 @@ My strongest interests are:
 
 ## 🔥 WHAT I'M INTO
 
-```text
-BACKEND
-████████████████████████████████
-
-DATABASE
-████████████████████████████
-
-SECURITY
-██████████████████████████
-
-PERFORMANCE
-████████████████████████
-
-INFRASTRUCTURE
-██████████████████████
-
-FRONTEND
-██████████████████
-```
+<img src="assets/focus.svg" width="100%" alt="Interests and current focus" />
 
 > Not a skill ranking — just the areas I enjoy exploring.
 
@@ -114,26 +73,7 @@ FRONTEND
 
 I prefer learning by **building and investigating**.
 
-```text
-        Learn
-          │
-          ▼
-       Build
-          │
-          ▼
-       Break
-          │
-          ▼
-     Investigate
-          │
-          ▼
-      Understand
-          │
-          ▼
-       Improve
-          │
-          └──────────► Repeat
-```
+<img src="assets/learn.svg" width="100%" alt="How I learn: Learn, Build, Break, Investigate, Understand, Improve" />
 
 I learn best when I can go from:
 
@@ -214,21 +154,13 @@ I learn best when I can go from:
 
 ---
 
-## 💭 CURRENT FOCUS
+## 🔍 UNDER THE HOOD
 
-```text
-┌──────────────────────────────────────────────┐
-│                                              │
-│          DEEPER BACKEND ENGINEERING          │
-│                                              │
-│   Database        ████████████████████       │
-│   Concurrency     ██████████████████         │
-│   Performance     █████████████████          │
-│   Security        █████████████████          │
-│   System Design   ████████████████           │
-│                                              │
-└──────────────────────────────────────────────┘
-```
+<img src="assets/trace.svg" width="100%" alt="Request trace: Client → Nginx → Spring Boot → Redis / PostgreSQL" />
+
+## 📊 CASE STUDY
+
+<img src="assets/perf.svg" width="100%" alt="TTFB reduced from ~17,000ms to ~200ms; payload from ~26KB to ~4KB" />
 
 ---
 
@@ -247,9 +179,7 @@ Architecture  →  Where everything comes together
 
 <div align="center">
 
-## BUILD. BREAK. UNDERSTAND. IMPROVE.
-
-### — RATANA —
+<img src="assets/motto.svg" width="100%" alt="Build. Break. Understand. Improve. — Ratana" />
 
 <br/>
 
